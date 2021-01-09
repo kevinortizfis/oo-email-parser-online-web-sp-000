@@ -27,7 +27,9 @@
 # EAP MUST return an array. EAP doesn't have an argument to accept. It's a class. parser would be what accepts the argument. Initialize with the strings.
 class EmailAddressParser
   attr_accessor :string
-  
+  def initialize(string)
+    @string = string
+  end
   def parse
     @string.split(/\,\s|\s/).uniq
   end
