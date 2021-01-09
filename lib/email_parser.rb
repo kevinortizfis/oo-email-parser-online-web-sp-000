@@ -26,6 +26,7 @@
 # EmailAddressParser is going to take the string, parse the emails by whitespace/comma and return an array of the results. EAP has to accept a string as its argument.
 # EAP MUST return an array. EAP doesn't have an argument to accept. It's a class. parser would be what accepts the argument. Initialize with the strings.
 class EmailAddressParser
+  attr_accessor :string
   def initialize(string)
     @string = string
   end
